@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right, #076585, #c2c2c2);
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1.6rem;
+    margin: 1rem;
+    display: inline-block;
+}
+
+#temp-input {
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    background: transparent;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    height: 3.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 5px;
+    background: linear-gradient(to right, #076585, #c2c2c2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container > div {
+    margin-bottom: 1rem;
+}
+
+i {
+    color: #000;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+i:hover {
+    color: #333;
+}
+
+.temp-select input[type='radio'] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    outline: none;
+    cursor: pointer;
+}
+
+.temp-select input[type='radio']:checked {
+    background-color: #333;
+}
+
+.temp-select label {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.temp-result {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    label {
+        font-size: 1.4rem;
+    }
+
+    #temp-input {
+        height: 2.5rem;
+        font-size: 1.4rem;
+    }
+
+    button {
+        height: 3rem;
+        font-size: 1.4rem;
+    }
+
+    .temp-select input[type='radio'] {
+        width: 15px;
+        height: 15px;
+    }
+
+    .temp-result {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+
+    #temp-input {
+        height: 2rem;
+        font-size: 1.2rem;
+    }
+
+    button {
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+
+    .temp-select input[type='radio'] {
+        width: 10px;
+        height: 10px;
+    }
+
+    .temp-result {
+        font-size: 1.4rem;
+    }
+}

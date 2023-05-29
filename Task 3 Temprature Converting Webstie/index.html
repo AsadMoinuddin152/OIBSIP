@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <title>Temp Converter</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>
+                Temperature Converter
+                <i class="fas fa-temperature-high"></i>
+            </h1>
+
+            <div class="temp-container">
+                <div class="temp-input">
+                    <input
+                        type="number"
+                        id="temp-input"
+                        placeholder="Enter Temperature...."
+                    />
+                </div>
+                <div class="temp-select">
+                    <input
+                        type="radio"
+                        name="temp"
+                        id="celsius"
+                        value="celsius"
+                        checked
+                    />
+                    <label for="celsius">Celsius</label>
+                    <input
+                        type="radio"
+                        name="temp"
+                        id="fahrenheit"
+                        value="fahrenheit"
+                    />
+                    <label for="fahrenheit">Fahrenheit</label>
+                </div>
+                <div class="temp-btn">
+                    <button id="temp-btn">Convert</button>
+                </div>
+            </div>
+            <div class="temp-result">
+                <div class="temp-result-text">
+                    <h1 id="temp-result-text">Result</h1>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
